@@ -26,8 +26,8 @@ void	ft_place_wall(char **map)
 		{
 			if (map[i][j] == '0')
 			{
-				random = rand() % 3;
-				if (random == 0)
+				random = rand() % 4;
+				if (random < 2)
 					map[i][j] = '1';
 			}
 			j++;
