@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "../includes/so_long_generator.h"
+#include <stdlib.h>
 
 void	ft_place_wall(char **map)
 {
@@ -26,8 +27,8 @@ void	ft_place_wall(char **map)
 		{
 			if (map[i][j] == '0')
 			{
-				random = rand() % 4;
-				if (random < 2)
+				random = rand() % 5;
+				if (random == rand() % 5)
 					map[i][j] = '1';
 			}
 			j++;
